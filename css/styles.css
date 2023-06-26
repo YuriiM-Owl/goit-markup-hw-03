@@ -1,0 +1,211 @@
+:root {
+  /** ------------------------ Fonts ------------------------ */
+  --f-global-font: 'Roboto', sans-serif;
+  --f-logo-font: 'Raleway', sans-serif;
+
+  /* font size */
+  --fsz-main-title: 56px;
+  --fsz-section-title: 36px;
+  --fsz-local-title: 20px;
+  --fsz-body: 16px;
+  --fsz-body-medium: 24px;
+  --fsz-small: 12px;
+  --fsz-button: 16px;
+  --fsz-link: 12px;
+
+  /** ------------------------ Colors ------------------------ */
+
+  --c-background: #ffffff; /* WHITE */
+
+  /* text styles */
+  --c-text-main: #434455 /* SLATE */;
+  --c-text-subtle: #8e8f99; /* LIGHT SLATE */
+  --c-text-alt: #ffffff; /* WHITE */
+
+  /* elements' styles */
+  --c-primary: #4d5ae5; /* IRIS */
+  --c-effect: #404bbf; /* OCEAN */
+  --c-decoration-dark: #2e2f42; /* NAVY BLUE */
+  --c-decoration-light: #f4f4fd; /* CLOUD */
+  --c-modal-bg: #fcfcfc; /* DAIRY */
+  --c-modal-ovl: rgba(46, 47, 66, 0.4); /* NAVY BLUE modal */
+  --c-hero-bg: rgba(46, 47, 66, 0.698); /* GREY */
+
+  /* effects */
+  --c-success: #31d0aa; /* GREEN */
+  --c-accent: #e7e9fc; /* CORNFLOWER */
+}
+
+/** ---------------------- Global styles ---------------------- */
+
+body {
+  background-color: var(--c-background);
+  font-family: var(--f-global-font);
+  color: var(--c-text-main);
+  /* font-size: var(--fsz-body); */
+}
+
+.main-title {
+  color: var(--c-text-alt);
+  font-size: var(--fsz-main-title);
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.section-title,
+.local-title {
+  color: var(--c-decoration-dark);
+  text-transform: capitalize;
+}
+
+.section-title {
+  font-size: var(--fsz-section-title);
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.local-title {
+  font-size: var(--fsz-local-title);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.logo {
+  font-family: var(--f-logo-font);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--c-primary);
+}
+
+.btn {
+  cursor: pointer;
+  font-family: var(--f-global-font);
+  /* font-size: var(--fsz-button); */
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+/*! ------------------------ Header ------------------------ */
+.page-header .logo-accent {
+  color: var(--c-decoration-dark);
+}
+
+.nav-list {
+  font-weight: 500;
+}
+
+.nav-list-item {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--c-decoration-dark);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--c-effect);
+}
+
+.header-address {
+  font-style: normal;
+}
+
+.address-link {
+  color: var(--c-text-main);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--c-effect);
+}
+
+/*! ------------------------ Footer ------------------------ */
+.page-footer {
+  background-color: var(--c-decoration-dark);
+}
+
+.page-footer .logo-accent {
+  color: var(--c-decoration-light);
+}
+
+.page-footer .text {
+  color: var(--c-decoration-light);
+}
+
+/*! ------------------------ Homepage Main ------------------------ */
+/** ------------------------ Hero ------------------------ */
+
+.hero {
+  background-color: var(--c-decoration-dark);
+}
+
+.order-btn {
+  color: var(--c-text-alt);
+  background-color: var(--c-primary);
+}
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--c-effect);
+}
+
+/** ------------------------ About Us ------------------------ */
+/* .about .local-title {
+  text-transform: capitalize;
+} */
+
+/** ------------------------ Our Team ------------------------ */
+.team {
+  background-color: var(--c-decoration-light);
+}
+
+.team-list-item {
+  background-color: var(--c-background);
+}
+
+.team .local-title,
+.team .text {
+  text-align: center;
+}
+
+/* .team .local-title {
+  text-transform: capitalize;
+} */
+
+/*! ------------------------ Portfolio Main ------------------------ */
+/** ------------------------ Filter Btns------------------------ */
+.portfolio-btn {
+  color: var(--c-primary);
+  background-color: var(--c-decoration-light);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--c-text-alt);
+  background-color: var(--c-effect);
+}
+
+/** ------------------------ Portfolio cards ------------------------ */
+.portfolio-link .text {
+  color: var(--c-text-main);
+}
