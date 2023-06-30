@@ -187,10 +187,10 @@ ul {
 .nav-list-item {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0;
 }
 
 .nav-link {
+  padding: 24px 0;
   color: var(--c-decoration-dark);
 }
 .nav-link:hover,
@@ -341,27 +341,31 @@ ul {
 /** ------------------------ Filter Btns------------------------ */
 .portfolio-btn-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
   margin-bottom: 72px;
   /* flex-wrap: wrap; */
 }
 
 .portfolio-btn {
+  padding: 12px 24px;
   color: var(--c-primary);
   background-color: var(--c-decoration-light);
+  border: 1px solid var(--c-accent);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--c-text-alt);
   background-color: var(--c-effect);
+  border: 1px solid transparent;
 }
 
 /** ------------------------ Portfolio cards ------------------------ */
 .portfolio-pages-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   justify-content: space-between;
 }
 
