@@ -69,20 +69,6 @@ ul {
   list-style-type: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1158px;
@@ -371,20 +357,35 @@ ul {
 
 .portfolio-pages-item {
   flex-basis: calc((100% - 48px) / 3);
-  border: 1px solid var(--c-accent);
   padding-bottom: 32px;
 }
 
-.portfolio-pages-item .thumb {
-  margin-bottom: 32px;
+.portfolio-pages-item .info-box {
+  padding: 32px 16px;
+  border: 1px solid var(--c-accent);
+  border-top: none;
 }
 
 .portfolio-pages-item .local-title {
-  /* margin-bottom: 8px; */
-  padding: 0 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-pages-item .text {
   color: var(--c-text-main);
-  padding: 0 16px;
+}
+
+/** ---------------------- Patterns ---------------------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
